@@ -480,25 +480,32 @@ summary::marker {
 }
 
 .mobile-nav .nav__item:nth-child(1) .nav__link {
-    transition: all 275ms 175ms
+    transition: all 275ms 175ms;
 }
 
 .mobile-nav .nav__item:nth-child(2) .nav__link {
-    transition: all 275ms 225ms
+    transition: all 275ms 225ms;
 }
 
 .mobile-nav .nav__item:nth-child(3) .nav__link {
-    transition: all 275ms 275ms
+    transition: all 275ms 275ms;
 }
 
 .mobile-nav .nav__item:nth-child(4) .nav__link {
-    transition: all 275ms 325ms
+    transition: all 275ms 325ms;
 }
 
 .mobile-nav .nav__item:nth-child(5) .nav__link {
-    transition: all 275ms 375ms
+    transition: all 275ms 375ms;
 }
 
+.mobile-nav .btn-socials {
+    transition: all 275ms 425ms;    
+}
+
+.mobile-nav .socials__item-link {
+    transition: all 275ms 475ms;  
+}
 
 /* Decoration */
 .mobile-nav .nav__list,
@@ -680,7 +687,7 @@ summary::marker {
     }
 
     .mobile-nav .nav__list .nav__item:last-child {
-        margin-right: 110px;
+        margin-right: 94px;
     }
 
     .mobile-nav .socials {
@@ -708,6 +715,10 @@ summary::marker {
     .mobile-nav .socials {
         right: 186px;
         top: 480px;
+    }
+
+    .mobile-nav .nav__list {
+        transform: translateX(-40%) skew(-16deg);
     }
 
 }
