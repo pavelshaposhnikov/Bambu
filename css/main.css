@@ -680,12 +680,16 @@ summary::marker {
     }
 
     .mobile-nav .nav__list .nav__item:last-child {
-        margin-right: 50px;
+        margin-right: 110px;
     }
 
     .mobile-nav .socials {
-        right: 135px;
+        right: 185px;
         top: 510px;
+    }
+
+    .nav__link {
+        font-size: 15px;
     }
 }
 
@@ -701,10 +705,26 @@ summary::marker {
         padding: 5px 10px;
     }
 
-    .nav__link {
-        font-size: 15px;
+}
+
+@media (max-width: 395px) {
+    .mobile-nav .nav__list {
+        transform: translateX(-45%) skew(-16deg);
     }
 
+    .mobile-nav .nav__list .nav__item:last-child {
+        margin-right: 60px;
+    }
+
+    .mobile-nav .socials {
+        right: 160px;
+    }
+}
+
+@media (max-width: 375px) {
+    .mobile-nav .socials {
+        right: 155px;
+    }
 }
 
 /*========================
@@ -1023,7 +1043,7 @@ summary::marker {
     }
 
     .general__title {
-        font-size: 46px;
+        font-size: 60px;
         -webkit-text-stroke: 5px #F7DF9C;
         text-shadow: 0px 5.964px 0px #debf69;
     }
@@ -1287,6 +1307,12 @@ summary::marker {
         font-size: 13px;
     }
 
+}
+
+@media (max-width: 375px) {
+    .about__text {
+        line-height: 130%;
+    }
 }
 
 /*========================
@@ -2285,6 +2311,24 @@ summary::marker {
     }
 }
 
+@media (max-width: 490px) {
+    .partners__cards {
+        margin-top: 65px;
+    }
+
+    .partners__card {
+        padding: 40px 11px 20px;
+    }
+
+    .partners__card-name {
+        font-size: 16px;
+    }
+
+    .partners__card-desc {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 414px) {
 
     .team {
@@ -2309,21 +2353,14 @@ summary::marker {
         line-height: 20px;
     }
 
-    .partners__cards {
-        margin-top: 65px;
-    }
-
-    .partners__card {
-        padding: 40px 11px 20px;
-    }
-
-    .partners__card-name {
-        font-size: 16px;
+    .partners__cards .partners__card:first-child {
+        margin-right: 10px;
     }
 
     .partners__card-desc {
-        font-size: 12px;
+        line-height: 20px;
     }
+
 }
 
 /*========================
@@ -2377,7 +2414,7 @@ summary::marker {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 490px) {
 
     .footer {
         height: 300px;
