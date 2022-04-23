@@ -320,6 +320,10 @@ summary::marker {
     transition: all 0.2s ease;
 }
 
+.mobile-nav .socials {
+    display: flex;
+}
+
 .socials {
     display: flex;
     justify-content: space-between;
@@ -453,7 +457,7 @@ summary::marker {
     height: 100%;
     align-items: flex-end;
     justify-content: start;
-    transform: translateX(90%) skew(-16deg);
+    transform: translateX(55%) skew(-16deg);
 }
 
 .mobile-nav .nav__item {
@@ -595,9 +599,10 @@ summary::marker {
 .mobile-nav .socials {
     justify-content: space-around;
     position: absolute;
-    left: 37px;
-    bottom: 75px;
+    top: 505px;
+    right: 70px;
 }
+
 
 @media (max-width: 1250px) {
     .nav__item {
@@ -618,8 +623,12 @@ summary::marker {
 
 @media (max-width: 990px) {
 
-    .header .btn-socials {
+    .header .socials-default {
         display: none;
+    }
+
+    .socials-mobile {
+        display: block;
     }
 
     .nav {
@@ -638,21 +647,21 @@ summary::marker {
 
 @media (max-width: 768px) {
     .mobile-nav .nav__list {
-        transform: translateX(66%) skew(-16deg);
+        transform: translateX(20%) skew(-16deg);
     }
 
     .socials {
         margin-right: 65px;
     }
+
+    .mobile-nav .socials {
+        right: 93px;
+    }
 }
 
 @media (max-width: 515px) {
     .mobile-nav .nav__list {
-        transform: translateX(0%) skew(-16deg);
-    }
-
-    .socials {
-        display: none;
+        transform: translateX(-35%) skew(-16deg);
     }
 }
 
@@ -665,6 +674,19 @@ summary::marker {
         padding-top: 0;
         top: 50px;
     }
+
+    .mobile-nav .btn-socials {
+        height: 40px;
+    }
+
+    .mobile-nav .nav__list .nav__item:last-child {
+        margin-right: 50px;
+    }
+
+    .mobile-nav .socials {
+        right: 135px;
+        top: 510px;
+    }
 }
 
 
@@ -672,7 +694,6 @@ summary::marker {
 
     .mobile-nav .nav__list {
         margin-top: 185px;
-        transform: translateX(-20%) skew(-16deg);
     }
 
     .btn-socials {
