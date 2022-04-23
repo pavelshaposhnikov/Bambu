@@ -667,7 +667,8 @@ summary::marker {
 @media (max-width: 428px) {
 
     .mobile-nav .nav__list {
-        margin-top: 114px;
+        margin-top: 185px;
+        transform: translateX(-20%) skew(-16deg);
     }
 
     .btn-socials {
@@ -1016,7 +1017,7 @@ summary::marker {
 
 @media (max-width: 414px) {
     .general {
-        height: 575px;
+        height: 650px;
     }
 }
 
@@ -2262,6 +2263,11 @@ summary::marker {
     .team {
         padding-bottom: 100px;
     }
+
+    .team__cards {
+        margin-top: 55px;
+    }
+
     .team__card {
         width: 49%;
         height: 550px;
@@ -2274,6 +2280,10 @@ summary::marker {
     .team__card-desc {
         font-size: 14px;
         line-height: 20px;
+    }
+
+    .partners__cards {
+        margin-top: 65px;
     }
 
     .partners__card {
