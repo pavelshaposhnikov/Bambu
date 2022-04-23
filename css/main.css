@@ -697,12 +697,17 @@ summary::marker {
 @media (max-width: 428px) {
 
     .mobile-nav .nav__list {
-        margin-top: 185px;
+        margin-top: 150px;
     }
 
     .btn-socials {
         font-size: 10px;
         padding: 5px 10px;
+    }
+
+    .mobile-nav .socials {
+        right: 186px;
+        top: 480px;
     }
 
 }
@@ -1027,7 +1032,7 @@ summary::marker {
     .general__video {
         max-width: 310px;
         height: 175px;
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     .general__video::before {
@@ -1057,12 +1062,6 @@ summary::marker {
     .general__buttons {
         margin-top: 30px;
         padding: 0 20px;
-    }
-}
-
-@media (max-width: 414px) {
-    .general {
-        height: 650px;
     }
 }
 
