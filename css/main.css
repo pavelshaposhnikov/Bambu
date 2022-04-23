@@ -2160,6 +2160,13 @@ summary::marker {
     }
 }
 
+@media (max-width: 1060px) {
+    .partners__card {
+        padding: 25px 20px;
+        height: 320px;
+    }
+}
+
 @media (max-width: 990px) {
 
     .team__card-img {
@@ -2177,11 +2184,6 @@ summary::marker {
 
     .partners__card-name {
         font-size: 23px;
-    }
-
-    .partners__card {
-        padding: 25px 20px;
-        height: 320px;
     }
 
 }
