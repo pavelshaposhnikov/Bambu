@@ -742,6 +742,10 @@ summary::marker {
     .mobile-nav .socials {
         right: 155px;
     }
+
+    .mobile-nav .socials {
+        top: 460px;
+    }
 }
 
 /*========================
