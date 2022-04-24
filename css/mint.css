@@ -350,7 +350,9 @@
 
 @media (max-width: 444px) {
     .mint__inner {
+        height: 437px;
         max-width: 323px;
+        padding: 75px 30px 0 30px;
     }
 
     .mint__inner::after {
@@ -359,29 +361,33 @@
     }
 
     .mint__inner::before {
-        top: -104px;
-        transform: scale(0.2);
+        display: none;
+    }
+
+    .mint__btn {
+        width: 255px;
+    }
+
+    .mint__content {
+        margin-top: 35px;
+    }
+
+    .mint__title {
+        font-size: 43px;
+        left: calc(50% - 127px / 2);
+        top: -30px;
     }
 }
 
 @media (max-width: 414px) {
 
     .mint::after {
-        height: 708px;
+        height: 676px;
     }
 
     .mint__desc {
         max-width: 283px;
         font-size: 16px;
         line-height: 19px;
-    }
-
-    .mint__inner {
-        padding-top: 75px;
-        height: 470px;
-    }
-
-    .mint__content {
-        margin-top: 65px;
     }
 }
