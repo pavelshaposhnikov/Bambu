@@ -713,12 +713,16 @@ summary::marker {
     }
 
     .mobile-nav .socials {
-        right: 186px;
-        top: 480px;
+        right: 159px;
+        top: 571px;
     }
 
     .mobile-nav .nav__list {
         transform: translateX(-40%) skew(-16deg);
+    }
+
+    .mobile-nav .nav__list .nav__item:last-child {
+        margin: 110px 35px 0 20px;
     }
 
 }
@@ -726,10 +730,6 @@ summary::marker {
 @media (max-width: 395px) {
     .mobile-nav .nav__list {
         transform: translateX(-45%) skew(-16deg);
-    }
-
-    .mobile-nav .nav__list .nav__item:last-child {
-        margin-right: 60px;
     }
 
     .mobile-nav .socials {
