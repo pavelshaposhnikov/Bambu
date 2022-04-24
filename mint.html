@@ -38,19 +38,19 @@
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a href="#" class="nav__link" target="_blank" data-scroll="#header">Home</a>
+                                <a href="index.html#header" class="nav__link" data-scroll="#header">Home</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link" target="_blank" data-scroll="#about">About</a>
+                                <a href="index.html#about" class="nav__link" data-scroll="#about">About</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link" target="_blank" data-scroll="#map">Roadmap</a>
+                                <a href="index.html#map" class="nav__link" data-scroll="#map">Roadmap</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link" target="_blank" data-scroll="#team">FAQ</a>
+                                <a href="index.html#team" class="nav__link" data-scroll="#team">FAQ</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link" target="_blank" data-scroll="#faq">Team</a>
+                                <a href="index.html#faq" class="nav__link" data-scroll="#faq">Team</a>
                             </li>
                         </ul>
                     </nav> <!-- /.nav -->
@@ -62,22 +62,22 @@
                         <nav class="mobile-nav" id="mobile-nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link" target="_blank" data-scroll="#header">Main</a>
+                                    <a href="index.html#header" class="nav__link" data-scroll="#header">Main</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link" target="_blank" data-scroll="#about">About</a>
+                                    <a href="index.html#about" class="nav__link" data-scroll="#about">About</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link" target="_blank" data-scroll="#map">Roadmap</a>
+                                    <a href="index.html#map" class="nav__link" data-scroll="#map">Roadmap</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link" target="_blank" data-scroll="#team">Team</a>
+                                    <a href="index.html#team" class="nav__link" data-scroll="#team">Team</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link" target="_blank" data-scroll="#faq">FAQ</a>
+                                    <a href="index.html#faq" class="nav__link" data-scroll="#faq">FAQ</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="index.html" class="btn btn-socials">
+                                    <a href="index.html#header" class="btn btn-socials">
                                         Home
                                     </a>
                                 </li>
@@ -103,7 +103,7 @@
                     </div> <!-- /.mobile__nav-wrapper -->
                     <ul class="socials socials-default">
                         <li class="socials__item">
-                            <a href="index.html" class="btn btn-socials">
+                            <a href="index.html#header" class="btn btn-socials">
                                 Home
                             </a>
                         </li>
@@ -157,6 +157,19 @@
             </button>
         </div> <!-- /.scroll-up -->
 
+        <div id="popup" class="popup">
+            <div class="popup__wrapper">
+                <div class="popup__error-icon">
+                    <img src="img/icons/alert.svg" title="alert" alt="alert">
+                </div>
+                <div>
+                    <h4 class="popup__title">Error alert!</h4>
+                    <p class="popup__desc">Error description text</p>
+                </div>
+                <button id="popupBtnClose" class="popup__btn-close">x</button>
+            </div>
+        </div> <!-- /.popup -->
+
         <!-- Jquery library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Retina un. -->
@@ -168,6 +181,8 @@
         </script>
         <!-- Main.js file -->
         <script src="js/app.js"></script>
+        <!-- web3 mint -->
+        <script src="js/mint.js" type="module"></script>
         <script>
             let burger = document.getElementById("burger"),
                 nav = document.getElementById("mobile-nav"),
