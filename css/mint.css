@@ -349,6 +349,11 @@
 }
 
 @media (max-width: 444px) {
+
+    body {
+        position: fixed;
+    }
+    
     .mint__inner {
         height: 437px;
         max-width: 323px;
