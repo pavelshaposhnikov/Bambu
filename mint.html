@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- ==============================
+    Project:        BambuVerse
+    Author:         Pavel Fers
+    Telegram:       https://t.me/pavelfers
+================================== -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>BambuVerse</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="css/fonts.css" />
+        <!-- Nunito Font connection -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Normalize -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/mint.css" />
+        <!-- AOS Connection -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="icon" href="img/icons/favicon.png" type="image/x-icon" />
+    </head>
+    <body id="body">
+        <header class="header" id="header">
+            <div class="header__container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/icons/logo.png" alt="Logo">
+                            <p class="logo__text">BambuVerse</p>
+                        </a>
+                    </div> <!-- /.logo -->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#header">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#about">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#map">Roadmap</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#team">FAQ</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#faq">Team</a>
+                            </li>
+                        </ul>
+                    </nav> <!-- /.nav -->
+                    <div class="mobile__nav-wrapper">
+                        <button id="burger" class="open__mobile">
+                            <span class="burger"></span>
+                            <span class="burger-text">Menu</span>
+                        </button>
+                        <nav class="mobile-nav" id="mobile-nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link" target="_blank" data-scroll="#header">Main</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link" target="_blank" data-scroll="#about">About</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link" target="_blank" data-scroll="#map">Roadmap</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link" target="_blank" data-scroll="#team">Team</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link" target="_blank" data-scroll="#faq">FAQ</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="index.html" class="btn btn-socials">
+                                        Home
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="socials-mobile socials">
+                                <li class="socials__item">
+                                    <a href="https://twitter.com/bambuverse" target="_blank" class="socials__item-link">
+                                        <img src="img/icons/twitter.svg" alt="Twitter icon" />
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="https://discord.gg" target="_blank" class="socials__item-link">
+                                        <img src="img/icons/ds.svg" alt="Ds icon" />
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="https://opensea.io/" target="_blank" class="socials__item-link">
+                                        <img src="img/icons/opensea.svg" alt="Opensea icon"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav> <!-- /.mobile-nav -->
+                    </div> <!-- /.mobile__nav-wrapper -->
+                    <ul class="socials socials-default">
+                        <li class="socials__item">
+                            <a href="index.html" class="btn btn-socials">
+                                Home
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://twitter.com/bambuverse" target="_blank" class="socials__item-link">
+                                <img src="img/icons/twitter.svg" alt="Twitter icon" />
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://discord.gg" target="_blank" class="socials__item-link">
+                                <img src="img/icons/ds.svg" alt="Ds icon" />
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://opensea.io/" target="_blank" class="socials__item-link">
+                                <img src="img/icons/opensea.svg" alt="Opensea icon"/>
+                            </a>
+                        </li>
+                    </ul> <!-- /.socials -->
+                </div> <!-- /.header__inner -->
+            </div> <!-- /.header__container -->
+        </header>
+
+        <section class="mint" id="mint">
+            <div class="container">
+                <div class="mint__inner">
+                    <h2 class="mint__title">Mint</h2>
+                    <p class="mint__desc">Our collection super cool. Mint it and get private secret bonuses now. It easy! Just do it!</p>
+                    <div class="mint__content">
+                        <div class="mint__calc">
+                            <div class="mint__calc-btn" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="1" max="10" disabled="">
+                            <div class="mint__calc-btn" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                        <div class="mint__price">
+                            <span><span id="price">0.1</span>eth</span>
+                        </div>
+                        <button class="mint__btn btn" id="mintBtn">Mint</button>
+                        <button class="mint__btn btn-white btn" id="connectWalletBtn">Connect Wallet</button>
+                    </div> <!-- /.mint__content -->
+                </div> <!-- /.mint__inner -->
+            </div> <!-- /.container -->
+        </section> 
+
+        <div class="scroll-up">
+            <audio src="userf/TNT - MinecraftParody of Dynamite by Taio Cruz.mp3"></audio>
+            <button class="player-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#CA525E">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div> <!-- /.scroll-up -->
+
+        <!-- Jquery library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Retina un. -->
+        <script type="text/javascript" src="js/retina.js"></script>
+        <!-- AOS script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- Main.js file -->
+        <script src="js/app.js"></script>
+        <script>
+            let burger = document.getElementById("burger"),
+                nav = document.getElementById("mobile-nav"),
+                slowmo = document.getElementById("slowmo");
+            body = document.getElementById("body");
+
+            // Burger menu opening
+            $(".nav__link").on("click", function (event) {
+                $("#body").removeClass("no-scroll");
+                $(".mobile-nav").removeClass("is-open");
+                $(".open__mobile").removeClass("is-open");
+            });
+
+            burger.addEventListener("click", function (e) {
+                this.classList.toggle("is-open");
+                nav.classList.toggle("is-open");
+            });
+
+            burger.addEventListener("click", function (e) {
+                body.classList.toggle("no-scroll");
+            });
+
+            slowmo.addEventListener("click", function (e) {
+                this.classList.toggle("is-slowmo");
+            });
+
+            burger.addEventListener("click", function (e) {
+                this.classList.toggle("is-open");
+                nav.classList.toggle("is-open");
+            });
+        </script>
+    </body>
+</html>

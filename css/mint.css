@@ -1,0 +1,387 @@
+/*========================
+            Mint 
+==========================*/
+
+.mint {
+    background: linear-gradient(0deg, #BDE29F 0%, #F6DF9D 100%);
+    position: relative;
+    z-index: 1;
+    padding: 135px 0 105px;
+}
+
+.mint::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/mint/bg.png);
+    background-size: cover;
+    width: 100%;
+    height: 740px;
+    z-index: -1;
+}
+
+.mint__inner {
+    position: relative;
+    padding: 100px 0 0;
+    margin: 0 auto;
+    max-width: 804px;
+    width: 100%;
+    height: 502px;
+    background: #FFFFFF;
+    border: 4px solid #9FDEE2;
+    box-shadow: 0px 5px 0px #9FDEE2;
+    border-radius: 80px 80px 80px 20px;
+}
+
+.mint__inner::after {
+    content: "";
+    position: absolute;
+    left: -170px;
+    bottom: -14px;
+    width: 360px;
+    height: 430px;
+    background: url(../img/mint/hero1.png);
+}
+
+.mint__inner::before {
+    content: "";
+    position: absolute;
+    right: -111px;
+    top: -43px;
+    width: 324px;
+    height: 483px;
+    background: url(../img/mint/hero2.png);
+}
+
+.mint__content {
+    margin-top: 40px;
+}
+
+.mint__title {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    z-index: 11;
+    left: calc(50% - 214px / 2);
+    top: -40px;
+    text-shadow: 		-0   -12px 0   #A3CD80,
+    0   -12px 0   #A3CD80,
+   -0    12px 0   #A3CD80,
+    0    12px 0   #A3CD80,
+   -12px -0   0   #A3CD80,
+    12px -0   0   #A3CD80,
+   -12px  0   0   #A3CD80,
+    12px  0   0   #A3CD80,
+   -1px -12px 0   #A3CD80,
+    1px -12px 0   #A3CD80,
+   -1px  12px 0   #A3CD80,
+    1px  12px 0   #A3CD80,
+   -12px -1px 0   #A3CD80,
+    12px -1px 0   #A3CD80,
+   -12px  1px 0   #A3CD80,
+    12px  1px 0   #A3CD80,
+   -2px -12px 0   #A3CD80,
+    2px -12px 0   #A3CD80,
+   -2px  12px 0   #A3CD80,
+    2px  12px 0   #A3CD80,
+   -12px -2px 0   #A3CD80,
+    12px -2px 0   #A3CD80,
+   -12px  2px 0   #A3CD80,
+    12px  2px 0   #A3CD80,
+   -3px -12px 0   #A3CD80,
+    3px -12px 0   #A3CD80,
+   -3px  12px 0   #A3CD80,
+    3px  12px 0   #A3CD80,
+   -12px -3px 0   #A3CD80,
+    12px -3px 0   #A3CD80,
+   -12px  3px 0   #A3CD80,
+    12px  3px 0   #A3CD80,
+   -4px -12px 0   #A3CD80,
+    4px -12px 0   #A3CD80,
+   -4px  12px 0   #A3CD80,
+    4px  12px 0   #A3CD80,
+   -12px -4px 0   #A3CD80,
+    12px -4px 0   #A3CD80,
+   -12px  4px 0   #A3CD80,
+    12px  4px 0   #A3CD80,
+   -5px -12px 0   #A3CD80,
+    5px -12px 0   #A3CD80,
+   -5px  12px 0   #A3CD80,
+    5px  12px 0   #A3CD80,
+   -12px -5px 0   #A3CD80,
+    12px -5px 0   #A3CD80,
+   -12px  5px 0   #A3CD80,
+    12px  5px 0   #A3CD80,
+   -6px -12px 0   #A3CD80,
+    6px -12px 0   #A3CD80,
+   -6px  12px 0   #A3CD80,
+    6px  12px 0   #A3CD80,
+   -12px -6px 0   #A3CD80,
+    12px -6px 0   #A3CD80,
+   -12px  6px 0   #A3CD80,
+    12px  6px 0   #A3CD80,
+   -7px -12px 0   #A3CD80,
+    7px -12px 0   #A3CD80,
+   -7px  12px 0   #A3CD80,
+    7px  12px 0   #A3CD80,
+   -12px -7px 0   #A3CD80,
+    12px -7px 0   #A3CD80,
+   -12px  7px 0   #A3CD80,
+    12px  7px 0   #A3CD80,
+   -8px -12px 0   #A3CD80,
+    8px -12px 0   #A3CD80,
+   -8px  12px 0   #A3CD80,
+    8px  12px 0   #A3CD80,
+   -12px -8px 0   #A3CD80,
+    12px -8px 0   #A3CD80,
+   -12px  8px 0   #A3CD80,
+    12px  8px 0   #A3CD80,
+   -9px -12px 0   #A3CD80,
+    9px -12px 0   #A3CD80,
+   -9px  12px 0   #A3CD80,
+    9px  12px 0   #A3CD80,
+   -12px -9px 0   #A3CD80,
+    12px -9px 0   #A3CD80,
+   -12px  9px 0   #A3CD80,
+    12px  9px 0   #A3CD80,
+   -10px -12px 0   #A3CD80,
+    10px -12px 0   #A3CD80,
+   -10px  12px 0   #A3CD80,
+    10px  12px 0   #A3CD80,
+   -12px -10px 0   #A3CD80,
+    12px -10px 0   #A3CD80,
+   -12px  10px 0   #A3CD80,
+    12px  10px 0   #A3CD80,
+   -11px -12px 0   #A3CD80,
+    11px -12px 0   #A3CD80,
+   -11px  12px 0   #A3CD80,
+    11px  12px 0   #A3CD80,
+   -12px -11px 0   #A3CD80,
+    12px -11px 0   #A3CD80,
+   -12px  11px 0   #A3CD80,
+    12px  11px 0   #A3CD80,
+   -12px -12px 0   #A3CD80,
+    12px -12px 0   #A3CD80,
+   -12px  12px 0   #A3CD80,
+    12px  12px 0   #A3CD80,
+   -12px -12px 0   #A3CD80,
+    12px -12px 0   #A3CD80,
+   -12px  12px 0   #A3CD80,
+    12px  12px 0   #A3CD80;;
+}
+
+.mint__desc {
+    max-width: 392px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 auto;
+}
+
+.mint__counter {
+    padding: 30px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #67B9DB;
+    text-align: center;
+    visibility: hidden;
+}
+
+.mint__counter--show {
+    visibility: visible;
+}
+
+.mint__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mint__counter {
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+}
+
+.mint__calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mint__calc-btn {
+    font-family: 'Bowlby One SC';
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 72px;
+    border-radius: 100px 0 0 100px;
+    border: 2px solid #BDBDBD;
+    background-color: #fff;
+    color: #A3CD80;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    user-select: none;
+}
+
+.mint__calc-btn:last-child {
+    border-radius: 0px 100px 100px 0;
+}
+
+.mint input#number {
+    color: #9FDEE2;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    width: 133px;
+    height: 72px;
+    background-color: #fff;
+    border: none;
+    border-top: 2px solid #BDBDBD;
+    border-bottom: 2px solid #BDBDBD;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mint input[type=number]::-webkit-inner-spin-button,
+.mint input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.mint input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.mint__price {
+    display: none;
+}
+
+.mint__btn {
+    cursor: pointer;
+    margin: 15px auto 0;
+}
+
+.mint__btn.btn-white {
+    margin-top: 20px;
+    border: 2px solid #E2A49F;
+    box-shadow: 0px 5px 0px #E2A49F;
+    background: #fff;
+    color: #E2A49F;
+}
+
+@media (max-width: 1150px) {
+    .mint__inner::after {
+        bottom: -51px;
+        transform: scale(0.8);
+    }
+
+    .mint__inner::before {
+        right: -117px;
+        top: -85px;
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 960px) {
+    .mint__inner {
+        max-width: 650px;
+    }
+
+    .mint__inner::after {
+        bottom: -92px;
+        transform: scale(0.6);
+    }
+
+    .mint__inner::before {
+        right: -148px;
+        top: -75px;
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 768px) {
+    .mint__inner {
+        max-width: 490px;
+    }
+
+    .mint__inner::after {
+        bottom: -134px;
+        transform: scale(0.4);
+    }
+
+    .mint__inner::before {
+        right: -162px;
+        top: -1px;
+        transform: scale(0.4);
+    }
+}
+
+
+@media (max-width: 490px) {
+    .mint__title {
+        font-size: 59px;
+        left: calc(50% - 175px / 2);
+    }
+
+    .mint__desc {
+        max-width: 356px;
+        font-size: 17px;
+    }
+
+    .mint__calc-btn, .mint input#number  {
+        height: 50px;
+    }
+
+    .mint input#number {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 444px) {
+    .mint__inner {
+        max-width: 323px;
+    }
+
+    .mint__inner::after {
+        bottom: -174px;
+        transform: scale(0.2);
+    }
+
+    .mint__inner::before {
+        top: -104px;
+        transform: scale(0.2);
+    }
+}
+
+@media (max-width: 414px) {
+
+    .mint::after {
+        height: 708px;
+    }
+
+    .mint__desc {
+        max-width: 283px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .mint__inner {
+        padding-top: 75px;
+        height: 470px;
+    }
+
+    .mint__content {
+        margin-top: 65px;
+    }
+}

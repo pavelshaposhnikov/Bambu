@@ -107,3 +107,27 @@ soundButton.addEventListener('click', toggleSound);
           }
         });
       });
+
+
+
+      function increaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        if (value >= 10) {
+          return;
+        }
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('price').innerHTML = value * 0.1
+        document.getElementById('number').value = value;
+      }
+    
+      function decreaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        if (value <= 1) {
+          return;
+        }
+        value--;
+        document.getElementById('price').innerHTML = value * 0.1
+        document.getElementById('number').value = value;
+      }
