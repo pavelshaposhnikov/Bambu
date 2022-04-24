@@ -401,10 +401,18 @@
 }
 
 @media (max-width: 375px) {
+    .mobile-nav .nav__list {
+        margin-top: 109px;
+        transform: translateX(-31%) skew(-16deg);
+    }
+
+    .mobile-nav .socials {
+        top: 412px;
+        right: 130px;
+    }
+
     .body__mint {
         position: relative;
-        width: 100%;
-        height: 100%;
-        overflow-x: visible;
+        overflow: hidden;
     }
 }
