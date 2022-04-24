@@ -350,10 +350,11 @@
 
 @media (max-width: 444px) {
 
-    body {
+    .body__mint {
         position: fixed;
         width: 100%;
-        height: auto;
+        height: 100%;
+        overflow-x: visible;
     }
 
     .mint__inner {
