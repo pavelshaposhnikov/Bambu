@@ -352,8 +352,10 @@
 
     body {
         position: fixed;
+        width: 100%;
+        height: auto;
     }
-    
+
     .mint__inner {
         height: 437px;
         max-width: 323px;
