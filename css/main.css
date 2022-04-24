@@ -2448,3 +2448,54 @@ summary::marker {
         font-size: 10px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scroll-up {
+    --player-button-width: 3em;
+    --sound-button-width: 2em;
+    --space: .5em;
+    width: auto;
+    height: auto;
+    right: 19px;
+    bottom: 19px;
+    position: fixed;
+    z-index: 11;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+.scroll-up:hover {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+  
+.player-button {
+    background-color: transparent;
+    border: 0;
+    width: var(--player-button-width);
+    height: var(--player-button-width);
+    cursor: pointer;
+    padding: 0;
+}
+
+
+@media (max-width: 500px) {
+    .scroll-up {
+        --player-button-width: 2em;
+        right: 5px;
+        bottom: 5px;
+        opacity: 0.5;
+    }
+}
