@@ -30,15 +30,12 @@ $("[data-scroll]").on("click", function(event) {
     let elementOffset = $(elementId).offset().top;
               
 $("html, body").animate({
-  scrollTop: elementOffset - -50
+  scrollTop: elementOffset - 50
   }, 600);
 });
 
 
-
-
-
-
+/* **** AUDIO PLAYER **** */
 
 const playerButton = document.querySelector('.player-button'),
       audio = document.querySelector('audio'),
@@ -96,38 +93,39 @@ function toggleSound () {
 soundButton.addEventListener('click', toggleSound);
 
 
-      /* Scroll Up Button */
+/* **** SCROLL UP BUTTON **** */
   
-      $(document).ready(function() { //when document is ready
-        $(window).scroll(function() { //when webpage is scrolled
-          if ($(this).scrollTop() > 500) { //if scroll from top is more than 500
-            $('.scroll-up').fadeIn(); //display element with class 'top-scroll'; opacity increases
-          } else { //if not
-            $('.scroll-up').fadeOut(); //hide element with class 'top-scroll'; opacity decreases
-          }
-        });
-      });
+$(document).ready(function() { //when document is ready
+  $(window).scroll(function() { //when webpage is scrolled
+    if ($(this).scrollTop() > 500) { //if scroll from top is more than 500
+        $('.scroll-up').fadeIn(); //display element with class 'top-scroll'; opacity increases
+    } else { //if not
+      $('.scroll-up').fadeOut(); //hide element with class 'top-scroll'; opacity decreases
+    }
+  });
+});
 
 
+/* **** CALCULATOR MINT SECTION **** */
 
-      function increaseValue() {
-        var value = parseInt(document.getElementById('number').value, 10);
-        if (value >= 10) {
-          return;
-        }
-        value = isNaN(value) ? 0 : value;
-        value++;
-        document.getElementById('price').innerHTML = value * 0.1
-        document.getElementById('number').value = value;
-      }
-    
-      function decreaseValue() {
-        var value = parseInt(document.getElementById('number').value, 10);
-        value = isNaN(value) ? 0 : value;
-        if (value <= 1) {
-          return;
-        }
-        value--;
-        document.getElementById('price').innerHTML = value * 0.1
-        document.getElementById('number').value = value;
-      }
+function increaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  if (value >= 10) {
+    return;
+  }
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('price').innerHTML = value * 0.1
+  document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  if (value <= 1) {
+    return;
+  }
+  value--;
+  document.getElementById('price').innerHTML = value * 0.1
+  document.getElementById('number').value = value;
+}
