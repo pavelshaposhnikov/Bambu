@@ -277,14 +277,11 @@ summary::marker {
     align-items: center;
 }
 
-.logo p {
-    margin-left: 10px;
-}
-
 .logo__text {
     font-family: 'Cookit';
     font-size: 32px;
     color: #fff;
+    margin-left: 10px;
 }
 
 .nav__list {
@@ -724,6 +721,15 @@ summary::marker {
 
     .mobile-nav .nav__list .nav__item:last-child {
         margin: 110px 35px 0 20px;
+    }
+
+    .logo img {
+        transform: scale(0.8);
+    }
+
+    .logo__text {
+        font-size: 26px;
+        margin-top: 10px;
     }
 
 }
