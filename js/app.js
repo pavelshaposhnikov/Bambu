@@ -83,13 +83,6 @@ function changeSeek () {
   audio.currentTime = time;
 }
 
-timeline.addEventListener('change', changeSeek);
-
-function toggleSound () {
-  audio.muted = !audio.muted;
-  soundButton.innerHTML = audio.muted ? muteIcon : soundIcon;
-}
-
 soundButton.addEventListener('click', toggleSound);
 
 
