@@ -83,8 +83,6 @@ function changeSeek () {
   audio.currentTime = time;
 }
 
-soundButton.addEventListener('click', toggleSound);
-
 
 /* **** SCROLL UP BUTTON **** */
   
