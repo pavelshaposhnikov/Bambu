@@ -1820,12 +1820,21 @@ summary::marker {
 .faq__content {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
-    align-items: center;
+    margin-top: 50px;
+    align-items: flex-start;
 }
 
 .faq__accordion {
     max-width: 701px;
+    width: 100%;
+}
+
+.faq__content-img {
+    width: 508px;
+    height: 670px;
+}
+
+.faq__content-img img {
     width: 100%;
 }
 
@@ -1880,7 +1889,7 @@ summary::marker {
 }
 
 .active .faq__accordion-content {
-    max-height: 150px;
+    max-height: 120px;
 }
 
 .active .faq__accordion-icon {
